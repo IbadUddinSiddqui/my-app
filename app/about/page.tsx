@@ -3,6 +3,9 @@ import Header from "../components/Header/Header";
 import Footer from "../components/Footer/Footer";
 import styles from "./page.module.css"; // Use one CSS file
 import Image from "next/image";
+import image1 from './team1.jpg'
+import image2 from './team2.jpg'
+import image3 from './team3.jpg'
 
 function About() {
   return (
@@ -26,18 +29,18 @@ function About() {
           <h2 className={styles.subheading}>Meet Our Team</h2>
           <div className={styles.teamGrid}>
             <div className={styles.teamMember}>
-              <Image src="/images/team1.jpg" alt="John Doe" />
-              <h3>John Doe</h3>
+              <Image width={200}  height={200} src={image1}  alt="John Doe" />
+              <h3>Adolf Hitler</h3>
               <p>CEO & Founder</p>
             </div>
             <div className={styles.teamMember}>
-              <Image src="/images/team2.jpg" alt="Jane Smith" />
-              <h3>Jane Smith</h3>
+              <Image  width={200}  height={300} src={image2} alt="Jane Smith" />
+              <h3>Mr Bean</h3>
               <p>Chief Operating Officer</p>
             </div>
             <div className={styles.teamMember}>
-              <Image src="/images/team3.jpg" alt="Michael Brown" />
-              <h3>Michael Brown</h3>
+              <Image   width={200}  height={300} src={image3} alt="Michael Brown" />
+              <h3>Peter Parker</h3>
               <p>Lead Developer</p>
             </div>
           </div>
