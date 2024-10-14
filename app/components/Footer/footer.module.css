@@ -1,0 +1,20 @@
+.footer{
+    background-color: rgba(255, 255, 255, 0.1); /* Slightly transparent background */
+  backdrop-filter: blur(10px); /* Apply blur effect (glass effect) */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+  padding: 20px;
+  text-align: center;
+  bottom: 0;
+  color: white;
+  width: 100%;
+  transition: background-color 0.3s ease, backdrop-filter 0.3s ease, box-shadow 0.3s ease;
+  z-index: 2;
+}
+.email{
+    display: inline;
+}
+.footer:hover {
+    background-color: rgba(255, 255, 255, 0.2); /* Slightly more visible on hover */
+    backdrop-filter: blur(15px); /* Increase blur on hover for effect */
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3); /* Deeper shadow on hover */
+  }

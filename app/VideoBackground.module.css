@@ -1,0 +1,28 @@
+.videoContainer {
+ position: fixed;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -1; /* Keeps the video behind the header, content, and footer */
+  object-fit: cover;
+}
+
+.video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;       /* Set width to 100% of the container */
+  height: auto;      /* Height will adjust automatically to maintain aspect ratio */
+  min-height: 100%;  /* Minimum height is set to fill the container */
+  z-index: -1;
+  transform: translate(-50%, -50%);
+  object-fit: contain; /* This will ensure the whole video is shown */
+}
+@media (max-width: 1080px) {
+  /* Adjustments for smaller screens if necessary */
+  .video {
+    object-fit: cover; /* Ensures video stays in proportion */
+  }
+}
+

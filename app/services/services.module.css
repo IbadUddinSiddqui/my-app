@@ -1,0 +1,80 @@
+/* styles/Services.module.css */
+
+.pageWrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Full viewport height */
+  background: rgba(0, 0, 0, 0.7); /* Semi-transparent dark background for contrast */
+  color: white; /* Default text color */
+}
+
+.mainContent {
+  flex: 1; /* This makes the main content grow to fill the remaining space */
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center content horizontally */
+  text-align: center; /* Center text */
+  padding: 40px 20px; /* Add padding for better spacing */
+}
+
+.h1 {
+  font-size: 2.5rem; /* Larger font for the main title */
+  margin-bottom: 20px; /* Space below the title */
+  text-transform: uppercase; /* Make title uppercase for emphasis */
+  letter-spacing: 2px; /* Add spacing between letters */
+  border-bottom: 2px solid rgba(255, 255, 255, 0.5); /* Underline effect */
+  padding-bottom: 10px; /* Space below the border */
+}
+
+.serviceSection {
+  margin: 40px 0; /* Space above and below the section */
+  width: 100%; /* Full width */
+  max-width: 1200px; /* Max width for the main content */
+}
+
+.serviceCard {
+  background: rgba(255, 255, 255, 0.15); /* Slightly transparent background */
+  backdrop-filter: blur(15px); /* Glass effect */
+  border-radius: 12px; /* Rounded corners */
+  padding: 20px;
+  width: 90%; /* Card width */
+  max-width: 400px; /* Max width for card */
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.5); /* Deeper shadow for depth */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effect */
+  margin: 0 auto; /* Center card in the section */
+}
+
+.serviceCard:hover {
+  transform: translateY(-8px); /* Lift card on hover */
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.7); /* Deeper shadow on hover */
+}
+
+.serviceTitle {
+  font-size: 1.8rem; /* Title font size */
+  margin-bottom: 10px; /* Space below title */
+  color: #ffd700; /* Gold color for the title */
+}
+
+.serviceDescription {
+  font-size: 1.1rem; /* Description font size */
+  line-height: 1.5; /* Better readability */
+  margin-top: 10px; /* Space above description */
+}
+
+@media (max-width: 768px) {
+  .h1 {
+    font-size: 2rem; /* Smaller title on mobile */
+  }
+
+  .serviceCard {
+    width: 95%; /* Wider cards on mobile */
+  }
+
+  .serviceTitle {
+    font-size: 1.5rem; /* Smaller title on mobile */
+  }
+
+  .serviceDescription {
+    font-size: 1rem; /* Smaller description on mobile */
+  }
+}

@@ -1,0 +1,29 @@
+/* styles/Home.module.css */
+.pageWrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Full viewport height */
+    background: rgba(0, 0, 0, 0.7); /* Semi-transparent dark background for contrast */
+      }
+  
+  .mainContent {
+    flex: 1; /* This makes the main content grow to fill the remaining space */
+    display: flex;
+    justify-content: center; /* Center the content horizontally */
+    align-items: center; /* Center the content vertically */
+    color: white; /* Text color for better contrast on video */
+    text-align: center; /* Center text */
+    padding: 20px; /* Add some padding */
+    width: 100%;
+    height: 100vh;
+  }
+  
+  .heroText {
+    font-size: 2.5rem; /* Large font size */
+    margin-bottom: 1rem; /* Space below the heading */
+  }
+  
+  .subText {
+    font-size: 1.5rem; /* Medium font size */
+  }
+  

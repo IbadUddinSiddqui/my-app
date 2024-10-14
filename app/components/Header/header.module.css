@@ -1,0 +1,40 @@
+.header{
+    background-color: transparent; /* Fully transparent header */
+    position: top;
+   width: 100%;
+    z-index: 10;
+    padding: 10px 0;
+
+}
+.headerelement{
+    opacity: 0;
+    display: inline;
+}
+.headbox{
+    
+}
+.headelement{
+    opacity: 1;
+  color: #fff;
+  list-style: none;
+  display: inline-block;
+  margin: 0 15px;
+  padding: 10px 20px;
+  border-radius: 10px;
+  transition: background-color 0.3s ease, backdrop-filter 0.3s ease, box-shadow 0.3s ease;
+  border: 1px solid transparent; /* No border initially */
+}
+.headelement:hover{
+    background-color: rgba(255, 255, 255, 0.2); /* Slightly transparent white background */
+    backdrop-filter: blur(10px); /* Apply blur effect (glass effect) */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Add subtle shadow */
+    border: 1px solid rgba(255, 255, 255, 0.3); /* Light border on hover */
+    }
+
+.headcontact{
+    margin-right: 40px;
+    float:inline-end;
+    display: inline;
+    color :red
+    
+}
