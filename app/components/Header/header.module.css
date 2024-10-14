@@ -10,9 +10,6 @@
     opacity: 0;
     display: inline;
 }
-.headbox{
-    
-}
 .headelement{
     opacity: 1;
   color: #fff;
@@ -39,3 +36,41 @@
     color :red
     
 }
+@media   (max-width: 472px) {
+    .headelement{
+        margin: 0;
+    }
+    .headcontact {
+        margin-right: 0;
+        
+    }
+
+    
+}
+@media   (max-width: 343px) {
+    .headelement{
+        margin: 0;
+        padding: 0.5rem;
+    }
+    .headcontact {
+        margin-top: 0.2;
+        margin-right: 0.2;
+        margin-left: 0;
+    }
+
+    
+}
+@media   (max-width: 272px) {
+    .headelement{
+      
+    font-size: 0.8rem;
+    }
+    .headcontact {
+        
+        font-size: 0.7rem;
+    }
+
+    
+}
+
+
